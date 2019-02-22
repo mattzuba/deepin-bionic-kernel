@@ -113,6 +113,8 @@ main() {
     make_release
     
     popd
+
+    apt update
 }
 
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
