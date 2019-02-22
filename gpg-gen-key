@@ -1,0 +1,7 @@
+Key-Type: 1
+Key-Usage: sign
+Key-Length: 4096
+Name-Real: Root Bionic Kernel
+Name-Email: root@localhost
+Expire-Date: 0
+%no-protection

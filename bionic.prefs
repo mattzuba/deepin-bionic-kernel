@@ -1,0 +1,11 @@
+Package: *
+Pin: release a=bionic-security
+Pin-Priority: -1
+
+Package: linux-image-* linux-modules-* linux-headers-*
+Pin: release a=bionic-security
+Pin-Priority: 1
+
+Package: intel-microcode amd-microcode
+Pin: release a=bionic-security
+Pin-Priority: 500
