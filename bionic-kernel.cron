@@ -99,6 +99,8 @@ EOF
 }
 
 main() {
+    apt update
+
     create_sources $BASE_DIR
     
     pushd ${BASE_DIR}
