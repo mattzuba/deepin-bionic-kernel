@@ -10,7 +10,7 @@ It then adds a daily cron script which will check if there are any updates to th
 $ git clone https://github.com/mattzuba/deepin-bionic-kernel`
 $ cd deepin-bionic-kernel
 $ sudo ./install.sh
-$ sudo /etc/cron.daily/bionic-kernel.cron
+$ sudo /etc/cron.daily/bionic-kernel
 ```
 
 ## Usage
