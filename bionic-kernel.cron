@@ -20,7 +20,7 @@ get_depends() {
     local OLD_IFS=$IFS
     local IFS=', '
     for DEP in $LATEST_DEPENDS; do
-        if echo $DEP | grep -qvP $EXCLUDE; then
+        if [[ ${EXCLUDE} == "" ]] || echo $DEP | grep -qvP $EXCLUDE; then
             DEPENDS="${DEPENDS}, ${DEP}"
         fi
     done
