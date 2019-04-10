@@ -9,7 +9,7 @@ create_sources() {
 get_version() {
     local PACKAGE=$1
     local MAINT=$2
-    apt-cache show ${PACKAGE} | grep -B6 "Maintainer: ${MAINT}" | grep -oP '(?<=Version: ).*'
+    apt-cache madison ${PACKAGE} | grep -i "${MAINT}" | head -1 | cut -d \| -f 2
 }
 
 get_depends() {
